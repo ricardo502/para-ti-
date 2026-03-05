@@ -18,22 +18,21 @@
         }
         .container {
             background: white;
-            padding: 30px;
+            padding: 40px 30px;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             max-width: 350px;
             width: 90%;
         }
-        h1 { font-size: 22px; color: #d63384; margin-bottom: 10px; }
-        p { line-height: 1.5; font-style: italic; font-size: 16px; }
-        .heart { color: #e74c3c; font-size: 40px; animation: beat 1.2s infinite; }
+        h1 { font-size: 24px; color: #d63384; margin-bottom: 20px; }
+        p { line-height: 1.6; font-style: italic; font-size: 18px; margin-bottom: 30px; }
+        .heart { color: #e74c3c; font-size: 50px; animation: beat 1.2s infinite; margin-bottom: 10px; }
         
-        /* Contenedor del video para que se vea bien */
-        .video-container {
-            margin-top: 20px;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        /* Estilo para el reproductor de audio */
+        audio {
+            width: 100%;
+            margin-top: 10px;
+            filter: sepia(20%) saturate(70%) grayscale(100%) contrast(90%) invert(12%); /* Esto le da un toque elegante */
         }
 
         @keyframes beat {
@@ -51,17 +50,12 @@
     <p>"¿Cuánto me cuesta que me quieras un poquito?<br>
     ¿Cuánto me cuesta ser el dueño de tus besos?"</p>
     
-    <div class="video-container">
-        <iframe width="100%" height="200" 
-            src="https://www.youtube.com/embed/94_vT15_yX0?si=m5S8N8r4-CclO6-M" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-        </iframe>
-    </div>
+    <audio controls>
+        <source src="musica.mp3" type="audio/mpeg">
+        Tu navegador no soporta este elemento de audio.
+    </audio>
     
-    <p style="font-size: 13px; color: #888; margin-top: 15px;">
+    <p style="font-size: 13px; color: #888; margin-top: 25px; font-style: normal;">
         Dale play y escucha lo que te quiero decir.
     </p>
 </div>
