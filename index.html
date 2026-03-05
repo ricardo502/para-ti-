@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para alguien especial</title>
+    <style>
+        body {
+            background-color: #fdf2f2;
+            font-family: 'Georgia', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color: #5a1a1a;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 350px;
+            width: 90%;
+        }
+        h1 { font-size: 22px; color: #d63384; margin-bottom: 10px; }
+        p { line-height: 1.5; font-style: italic; font-size: 16px; }
+        .heart { color: #e74c3c; font-size: 40px; animation: beat 1.2s infinite; }
+        
+        /* Contenedor del video para que se vea bien */
+        .video-container {
+            margin-top: 20px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        @keyframes beat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="heart">❤</div>
+    <h1>Para ti...</h1>
+    <p>"¿Cuánto me cuesta que me quieras un poquito?<br>
+    ¿Cuánto me cuesta ser el dueño de tus besos?"</p>
+    
+    <div class="video-container">
+        <iframe width="100%" height="200" 
+            src="https://www.youtube.com/embed/94_vT15_yX0?si=m5S8N8r4-CclO6-M" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    
+    <p style="font-size: 13px; color: #888; margin-top: 15px;">
+        Dale play y escucha lo que te quiero decir.
+    </p>
+</div>
+
+</body>
+</html>
